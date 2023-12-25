@@ -1,0 +1,143 @@
+<!--Atividade 1-->
+<!--Crie um documento com a estrutura básica HTML5 abaixo e salve-o como:index.html-->
+
+<!Doctype html> <!--Tipo de documento-->
+<html lang="pt-br"> <!--Inicío da Página HTML-->
+<head><!--Cabeçalho contendo informações importantes para o browser/página-->
+    <meta charset="UTF-8" /><!--Conjunto de caracteres especiais para os acentos-->
+    <meta name="viewport" content="width=device-width, initial scale=1.0" /><!--Informação para páginas responsivas-->
+    <link rel="stylesheet" href="./assets/css/style.css" /><!-- Chamada de arquivo externo CSS. -->
+    <title>Nosso Site</title><!--Título da página na Barra de Título do navegador-->
+</head>
+
+<!--Atividade 2-->
+<!--Após as informações do Cabeçalho HTML, inclua no Corpo do Documento, 
+    o cabeçalho e a barra de navegação da Página.-->
+
+<body id="inicio"><!--Corpo da página onde se adiciona o conteúdo a ser visualizado pelos usuários-->
+    <header class="headerBox"> <!-- Box para o conteúdo do cabeçalho da página. -->
+
+        <!--Atividade 5-->  
+        <!--Inclua dentro do box semântico<header>,o Título Principal da página
+            OBS: A tag do Título Principal deve ser única na página.-->   
+        <h1>Eletiva - Linguagem de Programação IV - INTERNET - Nosso Site</h1>
+    </header>
+
+    <!--<br />=quebra de linha-->
+    <!--<hr />=linha divisória horizontal-->
+
+    <nav class="navBox"><!-- Box para o menu de navegação principal. -->
+
+        <!--Atividade 8-->
+        <!--Inclua o Menu de Navegação no box <nav>.-->
+        <ul>
+            <!--Atividade 11-->
+            <!--Inclua links na lista do Menu de Navegação contido na tag <nav>-->
+            | <li><a href="./index.html">Home</a></li> | 
+            <li><a href="./midias.html">Mídias</a></li> | 
+            <li><a href="./Extras.html">Extras</a></li> |
+            <li><a href="./Extras2.html">Extras II</a></li> | 
+            <li><a href="./contato.html">Contato</a></li> |
+            <!--
+                Atributos de links
+                href = Indica o conteúdo que será carregado;
+                # = Recarrega a própria página;
+                #id = Recarrega a própria página à partir do ‘id’;
+                target = Alvo (onde o conteúdo será carregado):
+                    _self = na janela atual, substituindo a página;
+                    _blank (ou _new) = carrega em outra aba/janela;
+                    _parent = carrega na janela/iframe ‘pai’;-->
+        </ul>
+
+    </nav>
+
+<!--Atividade 3-->
+<!--Inclua um bloco geral e crie a seção com artigos.-->
+
+    <main id="container"><!--Box div container para reunir o conteúdo geral. (divisão lógica)-->
+        <section id="sectionBox"><!-- Box section para conteúdos relacionados. -->
+            <article class="box"><!-- Box article para um conteúdo específico. -->
+                
+                <!--Atividade 6-->
+                <!--
+                    Inclua nos artigos: Subtítulos, textos e parágrafos.
+                    OBS:LOREM IPSUM=Texto em Latim para ser usado como conteúdo 
+                    nas páginas testes
+                -->
+                <h2>Estudando HTML</h2>
+                <p>
+                    Parágrafo com salto de linha...
+                </p>
+                <p> Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco ut aliquip ex ea commodo consequat...
+                </p>
+                <p> Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco ut aliquip ex ea commodo consequat...
+                </p>
+                <br>
+
+
+                <h2>Testando Estilização de páginas WEB</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nisi accusamus quae porro sed optio natus corrupti odio, ea impedit perspiciatis quo autem ducimus dolor cumque aperiam fugit beatae quas!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nisi accusamus quae porro sed optio natus corrupti odio, ea impedit perspiciatis quo autem ducimus dolor cumque aperiam fugit beatae quas!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nisi accusamus quae porro sed optio natus corrupti odio, ea impedit perspiciatis quo autem ducimus dolor cumque aperiam fugit beatae quas! 
+                </p>
+                <br>
+            </article>
+
+            <article id="iframe">
+
+                <!--Atividade 9-->
+                <!--Inclua um quadro com um conteúdo dentro de um artigo.-->
+                <iframe name="quadro1" width="300" height="250" src="./assets/images/imagem2.jpg">
+
+                </iframe>
+                <!--
+                    Atributos de IFRAME
+                    name - nome do quadro utilizado como alvo.
+                    src - endereço da imagem ou outro conteúdo (pathname).
+                    width - largura do quadro (px).
+                    height - altura do quadro (px).
+                -->
+            </article>
+            
+        </section>
+        <aside id="asideBox"> <!--Box aside para um conteúdo paralelo...(lateral/outros)-->
+            <h2 align="center">Procurando o Nemo</h2>
+
+
+            <!--Atividade 7-->
+            <!--Inclua uma imagem na Barra Lateral, <aside>.
+                Obs.: É importante organizar os arquivos do site através de subpastas para cada tipo de arquivo.
+                Utilizar uma pasta “assets” (recursos) para agrupá-las-->
+            <img src="./assets/images/imagem1.jpg" width="90%" alt="Imagem 1..." title="Primeira imagem do Site."/>
+                <!--
+                    Atributos de Imagem
+                    -src Endereço da imagem (pathname);
+                    -width Largura (px);
+                    -height Altura (px);
+                    -alt Texto alternativo para acessibilidade/erros;
+                    -title Título do elemento ("etiqueta" descritiva).
+                -->
+            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, a deleniti eveniet dolorem quaerat eius ut eum doloribus neque labore unde explicabo dicta repellendus nobis dignissimos officiis provident tenetur architecto?</p>
+            <a href="./midias.html" target="_self">Leia Mais...</a>
+        </aside>
+    </main>
+
+<!--Atividade 4-->
+<!--Inclua o box lateral e feche o bloco geral (div). Por fim, inclua o rodapé 
+    e feche as tags do Corpo da Página e do documento HTML -->
+    <footer id="footerBox"><!-- Box footer para informações finais (rodapé) -->
+        
+        <!--Atividade 10-->
+        <!--Inclua no </footer>,um endereço e/ou outras informações estilizadas.-->
+        <address><!--para contatos-->
+            <p><b>Fatec-SP</b></p> <!--<b>negrito</b>-->
+            <p><b>Av. Tiradentes, 715</b></p>
+            <p><em>Metrô Tiradentes</em></p><!--<em>ênfase!</em>-->
+        </address>
+        <p>&copy; Copyright - Lucas Ribeiro da Silva RM:22109821</p>
+    </footer> 
+</body>
+</html>
+

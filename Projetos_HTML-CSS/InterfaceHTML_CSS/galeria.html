@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/galeria.css">
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <title>PROF01</title>
+</head>
+<body>
+    <div class="parallax">
+        <header>
+            <div>
+                <h1>Proficiência 1 - HTML5 e CSS3</h1>
+            </div>
+            
+            <div>
+                <h2>👀Para quem conhece HTML5 e CSS3👀</h2>
+            </div>
+            <nav>
+                <ul class="flex-row">
+                    | <li><a href="./index.html">Sobre</a></li> |
+                    <li><a href="./galeria.html">Galeria</a></li> |
+                    <li><a href="./interfaceA.html">Interface A</a></li> |
+                    <li><a href="./interfaceB.html">Interface B</a></li> |
+                </ul>
+            </nav>
+        </header>
+        <!--vídeos-->
+        <div class="caixa1">
+            <div class="conteudo-titulo">
+                <span class="titulo">⬇PARALLAX⬇ ⬇role o scroll do mouse⬇</span>
+            </div>
+        </div>
+        <div class="conteudo">
+            <h3>Parallax - O que é?</h3>
+            <p>Veja a explicação e tutorial no vídeo a seguir</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UnYur3GqcDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <blockquote cite="https://www.youtube.com/watch?v=UnYur3GqcDc">Iframe - vídeo incorporado do youtube.</blockquote>
+            <p>OBS: a tag acima foi uma citação e possui o link de referência</p>
+
+            <h3>Vídeo com a tag video</h3>
+            <video width="320" height="240" controls>
+                <source src="./assets/videos/movie.mp4" type="video/mp4">
+            </video>
+
+            <h3>Vídeo com a tag Embed</h3>
+            <embed type="video/mp4" muted src="./assets/videos/andre_rieu_zorbas_dance.mp4" />
+            
+        </div>
+    
+        <!--imagens-->
+        <div class="caixa2">
+            <div class="conteudo-titulo">
+                <span class="titulo">Tags de Imagens</span>
+            </div>
+        </div>
+    
+        <div class="conteudo">
+            <h3>Imagem com IFRAME</h3>
+            <iframe name="quadro1" width="500" height="500" src="./assets/img/meuFavicon.jpg"></iframe>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
+            
+            
+            <figure>
+                <h3>Imagem com a tag Figure</h3>
+                <img src="./assets/img/img3.svg" alt="Foto">
+                <figcaption align="justify">Legenda ou cabeçalho da imagem</figcaption>
+            </figure>
+            
+            <h3>Imagem simples com a tag img</h3>
+            <img src="./assets/img/FotoAutorLucas.png" alt="Foto Lucas">
+        </div>
+    
+        <!--Audios-->
+        <div class="caixa3">
+            <div class="conteudo-titulo">
+                <span class="titulo">Áudios</span>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <h3>Áudio com link</h3>
+            <p class="texto">
+                Ouça a música através do link: 
+                <a href="./assets/audios/maria_maria.mp3" target="_blank">Maria Maria</a>
+            </p>
+
+            <h3>Áudio Interno</h3>
+            <audio src="./assets/audios/som1.mp3"controls="controls"></audio>
+        </div>
+    
+        <!--Fim - Lista de conteúdos-->
+        <div class="caixa4">
+            <div class="conteudo-titulo">
+                <span class="titulo">Fim - Lista de conteúdos e footer</span>
+            </div>
+        </div>
+        <div class="footer">
+            <footer class="rodape box3">
+                <div class="footer1 flex-column">
+                    <h3>Redes Sociais</h3>
+                    <p>Siga-nos em nossas redes sociais</p>
+                    <div class="icones-midias">
+                        <a href="#" class="github-icon">
+                            <i class="fa-brands fa-github-square"></i>GitHub
+                        </a>
+                        <br>
+                        <a href="#" class="linkedin-icon">
+                            <i class="fa-brands fa-linkedin"></i>Linkedin 
+                        </a>
+                    </div>
+                </div>
+                <div class="footer2 flex-column">
+                    <h3>Tecnlogias aplicadas na página:</h3>
+                    <ul class="flex-column">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                        <li>PHP</li>
+                    </ul>
+                    
+                </div>
+                <div class="footer3 flex-column">
+                    <h3>Recursos axiliares:</h3>
+                    <ul class="flex-column">
+                        <li>Google Fonts</li>
+                        <li>Font Awesome - Icons Free</li>
+                        <li>normalize.css</li>
+                    </ul>
+                </div>
+                <div class="footer4 flex-column">
+                    <h3>Inscreva-se</h3>
+                    <p>
+                        Entre com seu e-mail para receber notificações
+                    </p>
+        
+                    <div>
+                        <input type="email" placeholder="seu@email.com" id="email">
+                        <button type="submit" class="button">
+                            Enviar
+                        </button>
+                    </div>
+                </div>
+                <div class="footer5 flex-row">
+                    <strong><p>&copy; Todos os direitos reservados - 2023</p></strong>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

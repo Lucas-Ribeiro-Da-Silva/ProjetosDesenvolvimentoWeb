@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/extra2.css" />
+    <title>Extras</title>
+</head>
+<body>
+    <header id="headerBox"> <!-- Box para o conteúdo do cabeçalho da página. -->
+
+        <!--Atividade 5-->  
+        <!--Inclua dentro do box semântico<header>,o Título Principal da página
+            OBS: A tag do Título Principal deve ser única na página.-->   
+        <h1>Eletiva - Linguagem de Programação IV - INTERNET - Nosso Site</h1>
+    </header>
+
+    <!--<br />=quebra de linha-->
+    <!--<hr />=linha divisória horizontal-->
+
+    <nav id="navBox"><!-- Box para o menu de navegação principal. -->
+
+        <!--Atividade 8-->
+        <!--Inclua o Menu de Navegação no box <nav>.-->
+        <ul>
+            <!--Atividade 11-->
+            <!--Inclua links na lista do Menu de Navegação contido na tag <nav>-->
+            | <li><a href="./index.html">Home</a></li> | 
+            <li><a href="./midias.html">Mídias</a></li> | 
+            <li><a href="./Extras.html">Extras</a></li> |
+            <li><a href="./Extras2.html">Extras II</a></li> | 
+            <li><a href="./contato.html">Contato</a></li> |
+            <!--
+                Atributos de links
+                href = Indica o conteúdo que será carregado;
+                # = Recarrega a própria página;
+                #id = Recarrega a própria página à partir do ‘id’;
+                target = Alvo (onde o conteúdo será carregado):
+                    _self = na janela atual, substituindo a página;
+                    _blank (ou _new) = carrega em outra aba/janela;
+                    _parent = carrega na janela/iframe ‘pai’;-->
+        </ul>
+
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="col col-1">
+                <!-- conteúdo da coluna 1 -->
+                
+                <H2>CSS GRID</H2>
+                <p>
+                    display: grid - Esta é a propriedade principal para ativar o layout do CSS Grid em um elemento. <br><br>
+
+grid-template-columns e grid-template-rows - Essas propriedades permitem que você defina o tamanho e a largura das colunas e linhas em sua grade.<br><br>
+
+grid-template-areas - Esta propriedade permite que você defina uma grade usando nomes personalizados para as áreas de conteúdo.<br><br>
+
+grid-column e grid-row - Essas propriedades permitem que você especifique em qual coluna ou linha um item deve ser posicionado.<br><br>
+
+grid-column-start e grid-row-start - Essas propriedades permitem que você especifique o início da coluna ou linha para um item.<br><br>
+
+grid-column-end e grid-row-end - Essas propriedades permitem que você especifique o final da coluna ou linha para um item.<br><br>
+
+grid-area - Esta propriedade permite que você especifique o nome da área da grade em que um item deve ser colocado.<br><br>
+
+justify-items e align-items - Essas propriedades permitem que você alinhe os itens horizontalmente e verticalmente dentro das células da grade.<br><br>
+
+justify-content e align-content - Essas propriedades permitem que você alinhe o conteúdo da grade horizontal e verticalmente em relação à grade.<br><br>
+
+grid-gap - Esta propriedade permite que você defina o espaço entre as células da grade.<br>
+                </p>
+
+                <blockquote cite="https://chat.openai.com/chat"> <!--citação-->
+                    Bloco para citação de outro autor, com indicação da
+                    fonte e identação.
+                </blockquote>
+            </div>
+
+            <div class="col col-2">
+              <!-- conteúdo da coluna 2 -->
+              <!--multimidia (audio e video) = links ou <embed>-->
+                <H2 align="center">Tag Embed</H2>
+                <embed src="./assets/videos/andre_rieu_zorbas_dance.mp4" />
+                <!--
+                    Atributos do embed:
+                    hidden Exibe controles (false ou true).
+                    type Tipo da mídia (formato).
+                    width Largura do vídeo. 
+                    height Altura do vídeo.
+                -->
+                <br>
+                <figure> <!--imagem ou figura-->
+                    <H2 align="center">Tag Figure</H2>
+                    <img src="./assets/images/imagem3.jpg" width="100%" height="100%" alt="imagem 3..."/>
+                    <figcaption align="justify">Legenda ou cabeçalho da imagem</figcaption> <!--legenda ou cabeçlho da img-->
+                </figure>
+            </div>
+
+            <div class="col col-3">
+                <!-- conteúdo da coluna 3 -->
+                <dl> <!--glossário-->
+                    <h2>GLOSSÁRIO: FLEXBOX</h2>
+                    <dt>flex-grow</dt>
+                    <dd>proporção de ajuste automático</dd>
+                    <dt>flex-shrink</dt>
+                    <dd>capacidade de encolher</dd>
+                    <dt>flex-basis</dt>
+                    <dd>tamanho inicial</dd>
+                    <dt>flex</dt>
+                    <dd>combina as 3 propriedades anteriores</dd>
+                    <dt>flex-wrap</dt>
+                    <dd>quebra de linha...</dd>
+                    <dt>flex-direction</dt>
+                    <dd>organizado em linha ou coluna</dd>
+                    <dt>justify-content</dt>
+                    <dd>distribuição horizontal de items</dd>
+                    <dt>align-items</dt>
+                    <dd>distribuição vertical de items</dd>
+                    <dt>align-content</dt>
+                    <dd>distribuição de linhas</dd>
+                </dl>
+            </div>
+        </div>      
+    </main>
+    
+</body>
+<footer id="footerBox"><!-- Box footer para informações finais (rodapé) -->
+        
+    <!--Atividade 10-->
+    <!--Inclua no </footer>,um endereço e/ou outras informações estilizadas.-->
+    <address><!--para contatos-->
+        <p><b>Fatec-SP</b></p> <!--<b>negrito</b>-->
+        <p><b>Av. Tiradentes, 715</b></p>
+        <p><em>Metrô Tiradentes</em></p><!--<em>ênfase!</em>-->
+    </address>
+    <p>&copy; Copyright - Lucas Ribeiro da Silva RM:22109821</p>
+</footer> 
+</html>

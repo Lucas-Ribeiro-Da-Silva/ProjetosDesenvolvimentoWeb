@@ -1,0 +1,114 @@
+<!--Atividade 14-->
+<!--Crie a página de Contatos com um formulário básico.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Contato</title>
+</head>
+<body id="body-contacts">
+    <header id="headerBox"> <!-- Box para o conteúdo do cabeçalho da página. -->
+
+        <!--Atividade 5-->  
+        <!--Inclua dentro do box semântico<header>,o Título Principal da página
+            OBS: A tag do Título Principal deve ser única na página.-->   
+        <h1>Eletiva - Linguagem de Programação IV - INTERNET - Nosso Site</h1>
+    </header>
+
+    <nav id="navBox"><!-- Box para o menu de navegação principal. -->
+
+        <!--Atividade 8-->
+        <!--Inclua o Menu de Navegação no box <nav>.-->
+        <ul>
+            <!--Atividade 11-->
+            <!--Inclua links na lista do Menu de Navegação contido na tag <nav>-->
+            | <li><a href="./index.html">Home</a></li> | 
+            <li><a href="./midias.html">Mídias</a></li> | 
+            <li><a href="./Extras.html">Extras</a></li> |
+            <li><a href="./Extras2.html">Extras II</a></li> | 
+            <li><a href="./contato.html">Contato</a></li> |
+            <!--
+                Atributos de links
+                href = Indica o conteúdo que será carregado;
+                # = Recarrega a própria página;
+                #id = Recarrega a própria página à partir do ‘id’;
+                target = Alvo (onde o conteúdo será carregado):
+                    _self = na janela atual, substituindo a página;
+                    _blank (ou _new) = carrega em outra aba/janela;
+                    _parent = carrega na janela/iframe ‘pai’;-->
+        </ul>
+
+    </nav>
+
+    <div id="contatos" >
+        <h3 align="center">Deixe aqui o seu comentário</h2>
+        <form name="contato" method="post" action="mailto:seu@email.com">
+            <fieldset>
+                <legend>Contato</legend>
+                <p>
+                    Insira o seu nome:
+                </p>
+                <input type="text" id="nome" placeholder="Ex: LUCAS RIBEIRO DA SILVA" size="70" autofocus required/>
+                <br><br>
+                <p>
+                    <label for="email">E-mail</label>
+                </p>
+                <input type="email" id ="email" placeholder="nome@email.com" size="70" required />
+                <br><br>
+                <p>
+                    Insira o seu telefone:
+                </p>
+                <input type="text" id="telefone" placeholder="Ex: 11998789878" size="70" autofocus required/>
+                <br><br>
+
+                <p>
+                    Insira um comentário para nos avaliar:
+                </p>
+                <textarea name="" id="" cols="72" rows="6" placeholder="Seu comentário..."></textarea>
+                <br>
+
+                <input type="submit" id="enviar" value="Enviar Dados">
+            </fieldset>
+        </form>
+        <!--
+            •Atributos da tag Form
+                Name – nome do formulário;
+                Method – método de envio dos dados;
+                Action – local ou script para onde os dados irão;
+            • Agrupamento de campos
+                Fieldset – moldura para agrupar campos; 
+                Legend – Título do agrupamento;
+            • Textarea – Campo para textos longos
+                Row – Número de linhas;
+                Cols – Largura da linha, em caracteres;
+            • Input - Campos de entrada de dados
+                type="text" – campo de entrada de texto (curto);
+                type="email" – campo de endereço de email (é verificado);
+            • Atributos
+                autofocus – posicionamento inicial do cursor no campo;
+                required – campo de Preenchimento obrigatório (se estiver com o cursor); 
+                size – largura do box do campo, em caracteres;
+            • Input – Botão
+                type="submit" - botão de envio dos dados;
+                value – texto do botão.
+        -->
+    </div>
+</body>
+<footer class="footerBox"><!-- Box footer para informações finais (rodapé) -->
+        
+    <!--Atividade 10-->
+    <!--Inclua no </footer>,um endereço e/ou outras informações estilizadas.-->
+    <address><!--para contatos-->
+        <p><b>Fatec-SP</b></p> <!--<b>negrito</b>-->
+        <p><b>Av. Tiradentes, 715</b></p>
+        <p><em>Metrô Tiradentes</em></p><!--<em>ênfase!</em>-->
+    </address>
+    <p>&copy; Copyright - Lucas Ribeiro da Silva RM:22109821</p>
+</footer > 
+</html>
+
+<!--Crie mais conteúdo e estilize livremente todas as páginas do NOSSO SITE!-->

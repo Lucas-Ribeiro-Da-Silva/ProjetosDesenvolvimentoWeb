@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+header{
+    width: auto;
+    height: auto;
+}
+
+#imagem{
+    position: relative;
+    z-index:0;
+    top: 0;
+    left: 0;
+}
+
+.img2{
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 590px;
+}
+
+input{
+    margin: 20px auto;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 20%;
+}
+
+.input-dark{
+    background: linear-gradient(to right, #AAA, #707070,#454545);
+    color: black
+}
+
+.input-light{
+    background-color: black;
+    color: white;
+}
+
+
+
+footer{
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    padding: 2px;
+}
+
+.sumir{
+    position: absolute;
+    left: -920px;
+}
+
+.dark{
+    background: linear-gradient(to right, #000, #222, #333);
+    color: white;
+}
+
+.light{
+    background: linear-gradient(to right, #AAA, #707070,#454545);
+    color: black
+}
+
+.inverter {
+    transform: scaleX(-1);
+    }

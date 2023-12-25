@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+body{
+    background-color: #CBCF00;
+}
+
+header {
+    text-align: center;
+    background-color: #CBCF00;
+    padding: 3vh;
+    height: 4.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: no-wrap;
+
+}
+
+h1{
+    color: blue;
+    font-size: 2.5vw;
+    flex-grow: 1;
+}
+
+nav {
+    background-color: #a3a21b;
+    padding-top: 10px;
+    text-align: center;
+    height: 5vh;
+}
+
+nav, ul, li, a, footer, address, p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+li:hover a {
+    background-color: #CBCF00;
+    color: red;
+    font-size: x-large;
+}
+
+footer {
+    padding: 2vh; 
+    background-color: #a3a21b; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+}
+
+main, .container, .col{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 100%;
+}
+
+.col-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: justify;
+    width: 35vw;
+    flex-shrink: 1;
+    background-color: chartreuse;
+    padding: 1vh 1vw 1vh 1vw;
+
+}
+
+.col-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 2;
+    padding: 1vh 1vw 1vh 1vw;
+    background-color: red;
+    width: 40vw;
+
+}
+
+embed, figure {
+    width: 25vw;
+    height: 25vh;
+}
+
+.col-3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-shrink: 1;
+    background-color:chartreuse;
+    padding: 1vh 1vw 1vh 1vw;
+    width: 30vw;
+}   
+
+dl{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items:flex-end;
+}
+
+dt{
+    font-weight: bold;
+}
+ 

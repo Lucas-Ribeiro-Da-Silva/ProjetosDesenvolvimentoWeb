@@ -1,0 +1,106 @@
+<!--Atividade 12-->
+<!--Crie a estrutura básica para a página de mídias; Inclua as tags Semânticas 
+    que forem necessárias e inclua dois áudios de formas diferentes.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Midias</title>
+</head>
+<body>
+    <header id="headerBox"> <!-- Box para o conteúdo do cabeçalho da página. -->
+
+        <!--Atividade 5-->  
+        <!--Inclua dentro do box semântico<header>,o Título Principal da página
+            OBS: A tag do Título Principal deve ser única na página.-->   
+        <h1>Eletiva - Linguagem de Programação IV - INTERNET - Nosso Site</h1>
+    </header>
+
+    <!--<br />=quebra de linha-->
+    <!--<hr />=linha divisória horizontal-->
+
+    <nav id="navBox"><!-- Box para o menu de navegação principal. -->
+
+        <!--Atividade 8-->
+        <!--Inclua o Menu de Navegação no box <nav>.-->
+        <ul>
+            <!--Atividade 11-->
+            <!--Inclua links na lista do Menu de Navegação contido na tag <nav>-->
+            | <li><a href="./index.html">Home</a></li> | 
+            <li><a href="./midias.html">Mídias</a></li> | 
+            <li><a href="./Extras.html">Extras</a></li> |
+            <li><a href="./Extras2.html">Extras II</a></li> | 
+            <li><a href="./contato.html">Contato</a></li> |
+            <!--
+                Atributos de links
+                href = Indica o conteúdo que será carregado;
+                # = Recarrega a própria página;
+                #id = Recarrega a própria página à partir do ‘id’;
+                target = Alvo (onde o conteúdo será carregado):
+                    _self = na janela atual, substituindo a página;
+                    _blank (ou _new) = carrega em outra aba/janela;
+                    _parent = carrega na janela/iframe ‘pai’;-->
+        </ul>
+
+    </nav>
+
+    <div id="flex-midias"> 
+        <br>
+        <div>
+            <p class="texto">
+                Ouça a música através do link: 
+                <a href="./assets/audios/maria_maria.mp3" target="_blank">Maria Maria</a>
+            </p>
+        </div>
+        <br>
+        <p  class="texto">Ouça outra música divertida:</p>
+        <audio src="./assets/audios/som1.mp3"controls="controls"></audio>
+        <!--
+            Atributos do audio
+            autoplay Carrega o áudio e executa automaticamente.
+            src Informa o pathname (endereço) do áudio.
+            controls Exibe o painel de controle (play, pause...).
+            loop Especifica repetição do áudio.
+            preload Se exibe metadados (auto | metadata | none)
+            Atributos do source (opções de formatos)
+            type Informa o tipo de arquivo (ex.: "audio/mpeg").
+        -->
+    
+    <!--Atividade 13-->
+    <!--Após os dois áudios da página de midias,inclua dois vídeos,sendo um incorporado da internet-->
+        <br>
+        <p class="texto">A seguir: ursos na nartureza</p>
+        <video width="320" height="240" controls>
+            <source src="./assets/videos/movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Seu browser não suporta vídeo com HTML5
+        </video> 
+        <br>
+        <p class="texto">
+            Veja este anúncio: como fazer bolo de chocolate...
+        </p>
+        <!-- Vídeo incorporado da internet. -->
+        <iframe width="560" height="300" 
+        src="https://www.youtube.com/embed/mp-StM0f4J8" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+    
+</body>
+<footer id="footerBox"><!-- Box footer para informações finais (rodapé) -->
+        
+    <!--Atividade 10-->
+    <!--Inclua no </footer>,um endereço e/ou outras informações estilizadas.-->
+    <address><!--para contatos-->
+        <p><b>Fatec-SP</b></p> <!--<b>negrito</b>-->
+        <p><b>Av. Tiradentes, 715</b></p>
+        <p><em>Metrô Tiradentes</em></p><!--<em>ênfase!</em>-->
+    </address>
+    <p>&copy; Copyright - Lucas Ribeiro da Silva RM:22109821</p>
+</footer> 
+</html>

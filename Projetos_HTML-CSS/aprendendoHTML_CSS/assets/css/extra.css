@@ -1,0 +1,165 @@
+/*normalize*/
+
+/*
+fontes importadas:
+font-family: 'Phudu', cursive;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: large;
+  font-family: 'Phudu', cursive;
+}
+
+/*inicio do layout*/
+
+main {
+  grid-area: main;
+}
+
+header{
+  grid-area: cabecalho;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #CBCF00;
+}
+
+nav{
+  grid-area: navegacao;
+  border: 1px solid green;
+  background-color: #a3a21b;
+}
+
+nav, ul, li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px;
+  color: black;
+  
+}
+
+a:hover {
+  color: red;
+  font-size: 1.2em;
+  background-color: blue;
+}
+
+footer{
+  grid-area: rodape;
+  border: 1px solid greenyellow;
+  background-color: #a3a21b;
+}
+
+footer address, footer p{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+footer address p{
+  display: inline;
+}
+
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 6vh 6vh 1fr 6vh;
+  grid-template-areas:
+    'cabecalho'
+    'navegacao'
+    'main'
+    'rodape';
+  gap: 5px;
+  background-color:#CBCF00;
+}
+
+.coluna1{
+  grid-area: coluna1;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: wheat;
+}
+
+p {
+  font-size: 0.8em;
+  text-align: justify;
+}
+
+.coluna2{
+  grid-area: coluna2;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  background-color: wheat;
+}
+
+figure, embed {
+  width: 100%;
+  height: 200px;
+}
+
+.coluna3{
+  grid-area: coluna3;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: wheat;
+}
+
+dl{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items:flex-end;
+}
+
+dt{
+  font-weight: bold;
+}
+
+dd{
+  font-size: 0.8rem;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'coluna1 coluna2 coluna3'
+    'coluna1 coluna2 coluna3';
+  gap: 5px;
+}
+
+/*fim do layout*/
